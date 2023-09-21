@@ -1,27 +1,41 @@
 # InterfaceCrisResiduum
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+Este projeto foi gerado com o Angular CLI na versão 16.2.3.
 
-## Development server
+## Servidor de Desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Execute `ng serve` para iniciar um servidor de desenvolvimento. Acesse `http://localhost:4200/` em seu navegador.
 
-## Code scaffolding
+### Geração de Código
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Execute `ng generate component nome-do-componente`para gerar um novo componente.
 
-## Build
+Para ficar mais organizado podemos usar `ng g c components/nome-do-componente`, que irá gerar o componente dentro da pasta "components".
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Compilação (Build)
 
-## Running unit tests
+Execute `ng build` para compilar o projeto. Os artefatos de compilação serão armazenados no diretório `dist/`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Executando Testes Unitários
 
-## Running end-to-end tests
+Execute `ng test` para executar os testes unitários via [Karma](https://karma-runner.github.io).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Executando Testes de Ponta a Ponta (end-to-end)
 
-## Further help
+Execute `ng e2e` para executar os testes de ponta a ponta usando uma plataforma de sua escolha. Para usar este comando, você precisa primeiro adicionar um pacote que implemente as capacidades de teste de ponta a ponta.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Ajuda Adicional
+
+Para obter mais ajuda com o Angular CLI, use `ng help` ou consulte a página [Angular CLI Overview and Command Reference](https://angular.io/cli).
+
+## Tailwind Css
+
+A instalação é bem simples, só seguir a documentação do Tailwind na seção do framework, no caso aqui o Angular.
+
+### Tailwind Css mais flowbite
+
+A instalação é bem simples, só seguir a documentação do Tailwind na seção do framework, no caso aqui o Angular. https://flowbite.com/docs/getting-started/angular/
+
+### Tailwind Css mais Prettier
+
+A instalação é bem simples, só seguir a documentação do Tailwind na seção do Prettier. https://github.com/tailwindlabs/prettier-plugin-tailwindcss
