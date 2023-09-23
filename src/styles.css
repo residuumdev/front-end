@@ -3,12 +3,24 @@
 @tailwind utilities;
 
 :root {
+  /* Paleta Residuum */
   --cor-azul: #002266;
   --cor-verde: #64a23d;
   --cor-cinza: #585c5e;
   --cor-laranja: #ff4a00;
   --cor-branco: #ffffff;
   --cor-preto: #000000;
+  /* Paleta coleta seletiva */
+  --cor--reciclavel-azul: #0000ff; /* Azul: papel/papelão */
+  --cor--reciclavel-vermelho: #ff0000; /* Vermelho: plástico */
+  --cor-reciclavel-verde: #00ff00; /* Verde: vidro */
+  --cor-reciclavel-amarelo: #ffff00; /* Amarelo: metal */
+  --cor-reciclavel-marrom: #a52a2a; /* Marrom: orgânico */
+  --cor-reciclavel-cinza: #808080; /* Cinza: não reciclável */
+  --cor-reciclavel-preto: #000000; /* Preto: madeira */
+  --cor-reciclavel-laranja: #ff7f00; /* Laranja: resíduos perigosos */
+  --cor-reciclavel-branco: #ffffff; /* Branco: resíduos ambulatoriais e de serviços de saúde*/
+  --cor-reciclavel-roxo: #800080; /* Roxo: resíduos radioativos*/
 }
 
 /* Fonte Gotham HTF Ultra */

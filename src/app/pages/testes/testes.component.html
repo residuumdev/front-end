@@ -16,113 +16,34 @@
             class="rounded-lg bg-white p-4 shadow sm:p-6 xl:p-8 2xl:col-span-2"
           >
             <section>
-              <h3 class="mb-2 text-xl font-bold">
-                Registros de entrada e saída de Usuários
-              </h3>
+              <h3 class="mb-2 text-xl font-bold">Mapeamento</h3>
 
-              <div class="grid grid-cols-2 gap-4">
-                <div
-                  class="bg-card-quantidade-clientes m-4 w-3/6 rounded-lg p-4"
-                >
-                  <div class="flex flex-row items-center space-x-4">
-                    <div>
-                      <p class="text-sm font-medium uppercase leading-4">
-                        Usuários Ativos
-                      </p>
-                      <p
-                        class="inline-flex items-center space-x-2 text-2xl font-bold"
-                      >
-                        <span>10</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div class="flex">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159035.44230484957!2d-60.04950494143963!3d-3.0446589072395316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1bc8b37647b7%3A0x2b485c9ff765a9cc!2sManaus%2C%20AM!5e1!3m2!1spt-BR!2sbr!4v1695494127550!5m2!1spt-BR!2sbr"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
 
-                <div
-                  class="bg-card-quantidade-clientes m-4 w-3/6 rounded-lg p-4"
-                >
-                  <div class="flex flex-row items-center space-x-4">
-                    <div>
-                      <p class="text-sm font-medium uppercase leading-4">
-                        Clientes Ativos
-                      </p>
-                      <p
-                        class="inline-flex items-center space-x-2 text-2xl font-bold"
-                      >
-                        <span>28</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-2 gap-4">
-                <div
-                  class="bg-card-quantidade-clientes m-4 w-3/6 rounded-lg p-4"
-                >
-                  <div class="flex flex-row items-center space-x-4">
-                    <div>
-                      <p class="text-sm font-medium uppercase leading-4">
-                        Usuários Perdidos
-                      </p>
-                      <p
-                        class="inline-flex items-center space-x-2 text-2xl font-bold"
-                      >
-                        <span>- 10</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="bg-card-quantidade-clientes m-4 w-3/6 rounded-lg p-4"
-                >
-                  <div>
-                    <p class="text-sm font-medium uppercase leading-4">
-                      Clientes Perdidos
-                    </p>
-                    <p
-                      class="inline-flex items-center space-x-2 text-2xl font-bold"
-                    >
-                      <span>- 28</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex flex-row">
-                <div
-                  class="bg-card-quantidade-clientes m-4 w-3/6 rounded-lg p-4"
-                >
-                  <div class="flex flex-row items-center space-x-4">
-                    <div>
-                      <p class="text-sm font-medium uppercase leading-4">
-                        Usuários Recuperados
-                      </p>
-                      <p
-                        class="inline-flex items-center space-x-2 text-2xl font-bold"
-                      >
-                        <span>+ 10</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="bg-card-quantidade-clientes m-4 w-3/6 rounded-lg p-4"
-                >
-                  <div class="flex flex-row items-center space-x-4">
-                    <div>
-                      <p class="text-sm font-medium uppercase leading-4">
-                        Clientes Recuperados
-                      </p>
-                      <p
-                        class="inline-flex items-center space-x-2 text-2xl font-bold"
-                      >
-                        <span>+ 28</span>
-                      </p>
-                    </div>
-                  </div>
+                <div class="m-4">
+                  <ul>
+                    <li>Azul: papel/papelão</li>
+                    <li>Vermelho: plástico</li>
+                    <li>Verde: vidro</li>
+                    <li>Amarelo: metal</li>
+                    <li>Marrom: orgânico</li>
+                    <li>Cinza: não reciclável</li>
+                    <li>Preto: madeira</li>
+                    <li>Laranja: resíduos perigosos</li>
+                    <li>
+                      Branco: resíduos ambulatoriais e de serviços de saúde
+                    </li>
+                    <li>Roxo: resíduos radioativos</li>
+                  </ul>
                 </div>
               </div>
             </section>
@@ -131,17 +52,15 @@
           <div class="rounded-lg bg-white p-4 shadow sm:p-6 xl:p-8">
             <div class="mb-4 flex items-center justify-between">
               <div>
-                <h3 class="mb-2 text-xl font-bold text-gray-900">
-                  Últimas Transações
-                </h3>
+                <h3 class="mb-2 text-xl font-bold">Quantidade de clientes</h3>
                 <span class="text-base font-normal text-gray-500"
-                  >Esta é uma lista das transações mais recentes</span
+                  >Esta é uma lista quantitativa de usuários cadastrados.</span
                 >
               </div>
               <div class="flex-shrink-0">
                 <a
                   href="#"
-                  class="rounded-lg p-2 text-sm font-medium text-cyan-600 hover:bg-gray-100"
+                  class="rounded-lg p-2 text-sm font-medium text-[#64a23d] hover:bg-gray-100"
                   >Ver tudo</a
                 >
               </div>
@@ -158,75 +77,68 @@
                             scope="col"
                             class="p-4 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
                           >
-                            TRANSAÇÃO
+                            TIPO
                           </th>
                           <th
                             scope="col"
                             class="p-4 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
                           >
-                            DATA E HORA
+                            STATUS
                           </th>
                           <th
                             scope="col"
                             class="p-4 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
                           >
-                            VALOR
+                            QUANTIDADE
                           </th>
                         </tr>
                       </thead>
                       <tbody class="bg-white">
                         <tr>
-                          <td
-                            class="whitespace-nowrap p-4 text-sm font-normal text-gray-900"
-                          >
-                            Pagamento de
-                            <span class="font-semibold">Bonnie Green</span>
+                          <td class="whitespace-nowrap p-4 text-sm font-normal">
+                            Residências
                           </td>
                           <td
                             class="whitespace-nowrap p-4 text-sm font-normal text-gray-500"
                           >
-                            Apr 23 ,2023
+                            Ativos
                           </td>
                           <td
-                            class="whitespace-nowrap p-4 text-sm font-semibold text-gray-900"
+                            class="whitespace-nowrap p-4 text-sm font-semibold"
                           >
-                            $2300
+                            3
                           </td>
                         </tr>
                         <tr class="bg-gray-50">
                           <td
-                            class="rounded-left whitespace-nowrap rounded-lg p-4 text-sm font-normal text-gray-900"
+                            class="rounded-left whitespace-nowrap rounded-lg p-4 text-sm font-normal"
                           >
-                            Reembolso do pagamento para
-                            <span class="font-semibold">#00910</span>
+                            Condomínios
                           </td>
                           <td
                             class="whitespace-nowrap p-4 text-sm font-normal text-gray-500"
                           >
-                            Apr 23 ,2023
+                            Ativos
                           </td>
                           <td
-                            class="whitespace-nowrap p-4 text-sm font-semibold text-gray-900"
+                            class="whitespace-nowrap p-4 text-sm font-semibold"
                           >
-                            -$670
+                            72
                           </td>
                         </tr>
                         <tr>
-                          <td
-                            class="whitespace-nowrap p-4 text-sm font-normal text-gray-900"
-                          >
-                            Falha no pagamento do
-                            <span class="font-semibold">#087651</span>
+                          <td class="whitespace-nowrap p-4 text-sm font-normal">
+                            Empresas
                           </td>
                           <td
                             class="whitespace-nowrap p-4 text-sm font-normal text-gray-500"
                           >
-                            Apr 18 ,2023
+                            Ativas
                           </td>
                           <td
-                            class="whitespace-nowrap p-4 text-sm font-semibold text-gray-900"
+                            class="whitespace-nowrap p-4 text-sm font-semibold"
                           >
-                            $234
+                            21
                           </td>
                         </tr>
                       </tbody>
@@ -244,90 +156,63 @@
           <div class="rounded-lg bg-white p-4 shadow sm:p-6 xl:p-8">
             <div class="flex items-center">
               <div class="flex-shrink-0">
-                <span
-                  class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl"
-                  >123</span
-                >
                 <h3 class="text-base font-normal text-gray-500">
-                  Previsão de novos clientes mensal
+                  Toneladas de<br />
+                  resíduos <br />
+                  sólidos gerados
                 </h3>
               </div>
-              <div
-                class="ml-5 flex w-0 flex-1 items-center justify-end text-base font-bold text-green-500"
-              >
-                14.6%
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+              <div class="m-auto w-0 flex-1 items-center text-base">
+                <iframe
+                  title="Tons of solid waste generated"
+                  src="https://www.theworldcounts.com/embeds/counters/116?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14"
+                  height="100"
+                  width="300"
+                ></iframe>
               </div>
             </div>
           </div>
           <div class="rounded-lg bg-white p-4 shadow sm:p-6 xl:p-8">
             <div class="flex items-center">
               <div class="flex-shrink-0">
-                <span
-                  class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl"
-                  >500.000</span
-                >
                 <h3 class="text-base font-normal text-gray-500">
-                  Visitas ao site no último mês
+                  Toneladas de CO2 <br />
+                  emitidas na <br />
+                  atmosfera
                 </h3>
               </div>
               <div
                 class="ml-5 flex w-0 flex-1 items-center justify-end text-base font-bold text-green-500"
               >
-                32.9%
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                <iframe
+                  title="Tons of CO2 emitted into the atmosphere"
+                  src="https://www.theworldcounts.com/embeds/counters/23?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14"
+                  style="border: none"
+                  height="100"
+                  width="300"
+                ></iframe>
               </div>
             </div>
           </div>
           <div class="rounded-lg bg-white p-4 shadow sm:p-6 xl:p-8">
             <div class="flex items-center">
               <div class="flex-shrink-0">
-                <span
-                  class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl"
-                  >385</span
-                >
                 <h3 class="text-base font-normal text-gray-500">
-                  Inscrições de usuários no último mês
+                  Toneladas de <br />
+                  resíduos <br />
+                  despejados
                 </h3>
               </div>
               <div
                 class="ml-5 flex w-0 flex-1 items-center justify-end text-base font-bold text-red-500"
               >
-                -2.7%
-                <svg
-                  class="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                <iframe
+                  title="Tons of waste dumped"
+                  src="https://www.theworldcounts.com/embeds/counters/63?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14"
+                  style="border: none"
+                  height="100"
+                  width="300"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -336,12 +221,10 @@
         <div class="my-4 grid grid-cols-1 xl:gap-4 2xl:grid-cols-2">
           <div class="mb-4 h-full rounded-lg bg-white p-4 shadow sm:p-6">
             <div class="mb-4 flex items-center justify-between">
-              <h3 class="text-xl font-bold leading-none text-gray-900">
-                Últimos Clientes
-              </h3>
+              <h3 class="text-xl font-bold leading-none">Top 10</h3>
               <a
                 href="#"
-                class="inline-flex items-center rounded-lg p-2 text-sm font-medium text-cyan-600 hover:bg-gray-100"
+                class="inline-flex items-center rounded-lg p-2 text-sm font-medium text-[#64a23d] hover:bg-gray-100"
               >
                 Ver tudo
               </a>
@@ -358,7 +241,7 @@
                       />
                     </div>
                     <div class="min-w-0 flex-1">
-                      <p class="truncate text-sm font-medium text-gray-900">
+                      <p class="truncate text-sm font-medium">
                         Cristian Garcia
                       </p>
                       <p class="truncate text-sm text-gray-500">
@@ -366,9 +249,9 @@
                       </p>
                     </div>
                     <div
-                      class="inline-flex items-center text-base font-semibold text-gray-900"
+                      class="inline-flex items-center text-base font-semibold"
                     >
-                      $1.000.000,00
+                      12 toneladas
                     </div>
                   </div>
                 </li>
@@ -382,7 +265,7 @@
                       />
                     </div>
                     <div class="min-w-0 flex-1">
-                      <p class="truncate text-sm font-medium text-gray-900">
+                      <p class="truncate text-sm font-medium">
                         Cristian Garcia
                       </p>
                       <p class="truncate text-sm text-gray-500">
@@ -390,9 +273,9 @@
                       </p>
                     </div>
                     <div
-                      class="inline-flex items-center text-base font-semibold text-gray-900"
+                      class="inline-flex items-center text-base font-semibold"
                     >
-                      $3467
+                      11 toneladas
                     </div>
                   </div>
                 </li>
@@ -406,7 +289,7 @@
                       />
                     </div>
                     <div class="min-w-0 flex-1">
-                      <p class="truncate text-sm font-medium text-gray-900">
+                      <p class="truncate text-sm font-medium">
                         Cristian Garcia
                       </p>
                       <p class="truncate text-sm text-gray-500">
@@ -414,9 +297,9 @@
                       </p>
                     </div>
                     <div
-                      class="inline-flex items-center text-base font-semibold text-gray-900"
+                      class="inline-flex items-center text-base font-semibold"
                     >
-                      $67
+                      8 toneladas
                     </div>
                   </div>
                 </li>
@@ -430,7 +313,7 @@
                       />
                     </div>
                     <div class="min-w-0 flex-1">
-                      <p class="truncate text-sm font-medium text-gray-900">
+                      <p class="truncate text-sm font-medium">
                         Cristian Garcia
                       </p>
                       <p class="truncate text-sm text-gray-500">
@@ -438,9 +321,9 @@
                       </p>
                     </div>
                     <div
-                      class="inline-flex items-center text-base font-semibold text-gray-900"
+                      class="inline-flex items-center text-base font-semibold"
                     >
-                      $2367
+                      3 toneladas
                     </div>
                   </div>
                 </li>
@@ -454,7 +337,7 @@
                       />
                     </div>
                     <div class="min-w-0 flex-1">
-                      <p class="truncate text-sm font-medium text-gray-900">
+                      <p class="truncate text-sm font-medium">
                         Cristian Garcia
                       </p>
                       <p class="truncate text-sm text-gray-500">
@@ -462,9 +345,9 @@
                       </p>
                     </div>
                     <div
-                      class="inline-flex items-center text-base font-semibold text-gray-900"
+                      class="inline-flex items-center text-base font-semibold"
                     >
-                      $367
+                      2.5 toneladas
                     </div>
                   </div>
                 </li>
@@ -473,7 +356,7 @@
           </div>
 
           <div class="rounded-lg bg-white p-4 shadow sm:p-6 xl:p-8">
-            <h3 class="mb-10 text-xl font-bold leading-none text-gray-900">
+            <h3 class="mb-10 text-xl font-bold leading-none">
               Resíduos Coletados
             </h3>
             <div class="block w-full overflow-x-auto">
@@ -492,7 +375,9 @@
                     </th>
                     <th
                       class="min-w-140-px whitespace-nowrap border-l-0 border-r-0 bg-gray-50 px-4 py-3 text-left align-middle text-xs font-semibold uppercase text-gray-700"
-                    ></th>
+                    >
+                      Porcentagem %
+                    </th>
                   </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-100">
@@ -503,9 +388,9 @@
                       Lixo orgânico
                     </th>
                     <td
-                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium text-gray-900"
+                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium"
                     >
-                      5,649
+                      5,649 t
                     </td>
                     <td
                       class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs"
@@ -531,20 +416,20 @@
                       Papel e papelão
                     </th>
                     <td
-                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium text-gray-900"
+                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium"
                     >
-                      4,025
+                      4,025 t
                     </td>
                     <td
                       class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs"
                     >
                       <div class="flex items-center">
-                        <span class="mr-2 text-xs font-medium">24%</span>
+                        <span class="mr-2 text-xs font-medium">24.9%</span>
                         <div class="relative w-full">
                           <div class="h-2 w-full rounded-sm bg-gray-200">
                             <div
                               class="h-2 rounded-sm bg-blue-500"
-                              style="width: 24%"
+                              style="width: 24.9%"
                             ></div>
                           </div>
                         </div>
@@ -559,20 +444,20 @@
                       plástico
                     </th>
                     <td
-                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium text-gray-900"
+                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium"
                     >
-                      3,105
+                      3,105 t
                     </td>
                     <td
                       class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs"
                     >
                       <div class="flex items-center">
-                        <span class="mr-2 text-xs font-medium">18%</span>
+                        <span class="mr-2 text-xs font-medium">10.8%</span>
                         <div class="relative w-full">
                           <div class="h-2 w-full rounded-sm bg-gray-200">
                             <div
                               class="h-2 rounded-sm bg-teal-400"
-                              style="width: 18%"
+                              style="width: 10.8%"
                             ></div>
                           </div>
                         </div>
@@ -587,20 +472,20 @@
                       metal
                     </th>
                     <td
-                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium text-gray-900"
+                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium"
                     >
-                      1251
+                      1251 t
                     </td>
                     <td
                       class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs"
                     >
                       <div class="flex items-center">
-                        <span class="mr-2 text-xs font-medium">12%</span>
+                        <span class="mr-2 text-xs font-medium">13.9%</span>
                         <div class="relative w-full">
                           <div class="h-2 w-full rounded-sm bg-gray-200">
                             <div
                               class="h-2 rounded-sm bg-pink-600"
-                              style="width: 12%"
+                              style="width: 13.9%"
                             ></div>
                           </div>
                         </div>
@@ -615,20 +500,20 @@
                       vidro
                     </th>
                     <td
-                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium text-gray-900"
+                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium"
                     >
-                      734
+                      734 t
                     </td>
                     <td
                       class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs"
                     >
                       <div class="flex items-center">
-                        <span class="mr-2 text-xs font-medium">9%</span>
+                        <span class="mr-2 text-xs font-medium">9.5%</span>
                         <div class="relative w-full">
                           <div class="h-2 w-full rounded-sm bg-gray-200">
                             <div
                               class="h-2 rounded-sm bg-indigo-600"
-                              style="width: 9%"
+                              style="width: 9.5%"
                             ></div>
                           </div>
                         </div>
@@ -643,20 +528,20 @@
                       Lixo não reciclável
                     </th>
                     <td
-                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium text-gray-900"
+                      class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs font-medium"
                     >
-                      734
+                      734 t
                     </td>
                     <td
                       class="whitespace-nowrap border-t-0 p-4 px-4 align-middle text-xs"
                     >
                       <div class="flex items-center">
-                        <span class="mr-2 text-xs font-medium">9%</span>
+                        <span class="mr-2 text-xs font-medium">11.9%</span>
                         <div class="relative w-full">
                           <div class="h-2 w-full rounded-sm bg-gray-200">
                             <div
                               class="h-2 rounded-sm bg-gray-500"
-                              style="width: 9%"
+                              style="width: 11.9%"
                             ></div>
                           </div>
                         </div>
@@ -671,20 +556,20 @@
                       Lixo perigoso
                     </th>
                     <td
-                      class="whitespace-nowrap border-t-0 p-4 pb-0 align-middle text-xs font-medium text-gray-900"
+                      class="whitespace-nowrap border-t-0 p-4 pb-0 align-middle text-xs font-medium"
                     >
-                      456
+                      456 t
                     </td>
                     <td
                       class="whitespace-nowrap border-t-0 p-4 pb-0 align-middle text-xs"
                     >
                       <div class="flex items-center">
-                        <span class="mr-2 text-xs font-medium">50%</span>
+                        <span class="mr-2 text-xs font-medium">11.9%</span>
                         <div class="relative w-full">
                           <div class="h-2 w-full rounded-sm bg-gray-200">
                             <div
                               class="h-2 rounded-sm bg-orange-500"
-                              style="width: 50%"
+                              style="width: 11.9%"
                             ></div>
                           </div>
                         </div>
