@@ -42,9 +42,9 @@ A instalação é bem simples, só seguir a documentação do Tailwind na seçã
 
 ### GitHub
 
-git init
-git add .
-git commit -m "comentario da mudança"
-git branch -M main
-git remote add origin https://github.com/dev-garcia/interface-cris-residuum.git
-git push -u origin main
+- git init
+- git add .
+- git commit -m "comentario da mudança"
+- git branch -M main
+- git remote add origin https://github.com/dev-garcia/interface-cris-residuum.git
+- git push -u origin main
