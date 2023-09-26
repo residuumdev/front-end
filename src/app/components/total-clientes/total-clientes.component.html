@@ -1,0 +1,93 @@
+<div class="rounded-lg bg-white p-4 shadow sm:p-6 xl:p-8">
+  <div class="mb-4 flex items-center justify-between">
+    <div>
+      <h3 class="mb-2 text-xl font-bold">Quantidade de clientes</h3>
+      <span class="text-base font-normal text-gray-500"
+        >Esta é uma lista quantitativa de usuários cadastrados.</span
+      >
+    </div>
+    <div class="flex-shrink-0">
+      <a
+        href="#"
+        class="rounded-lg p-2 text-sm font-medium text-[#64a23d] hover:bg-gray-100"
+        >Ver tudo</a
+      >
+    </div>
+  </div>
+
+  <div class="mt-8 flex flex-col">
+    <div class="overflow-x-auto rounded-lg">
+      <div class="inline-block min-w-full align-middle">
+        <div class="overflow-hidden shadow sm:rounded-lg">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+              <tr>
+                <th
+                  scope="col"
+                  class="p-4 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
+                >
+                  TIPO
+                </th>
+                <th
+                  scope="col"
+                  class="p-4 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
+                >
+                  STATUS
+                </th>
+                <th
+                  scope="col"
+                  class="p-4 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
+                >
+                  QUANTIDADE
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white">
+              <tr>
+                <td class="whitespace-nowrap p-4 text-sm font-normal">
+                  Residências
+                </td>
+                <td
+                  class="whitespace-nowrap p-4 text-sm font-normal text-gray-500"
+                >
+                  Ativos
+                </td>
+                <td class="whitespace-nowrap p-4 text-sm font-semibold">
+                  {{ totalClientes.residencias }}
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td
+                  class="rounded-left whitespace-nowrap rounded-lg p-4 text-sm font-normal"
+                >
+                  Condomínios
+                </td>
+                <td
+                  class="whitespace-nowrap p-4 text-sm font-normal text-gray-500"
+                >
+                  Ativos
+                </td>
+                <td class="whitespace-nowrap p-4 text-sm font-semibold">
+                  {{ totalClientes.condominios }}
+                </td>
+              </tr>
+              <tr>
+                <td class="whitespace-nowrap p-4 text-sm font-normal">
+                  Empresas
+                </td>
+                <td
+                  class="whitespace-nowrap p-4 text-sm font-normal text-gray-500"
+                >
+                  Ativas
+                </td>
+                <td class="whitespace-nowrap p-4 text-sm font-semibold">
+                  {{ totalClientes.empresas }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

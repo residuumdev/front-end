@@ -48,3 +48,18 @@ A instalação é bem simples, só seguir a documentação do Tailwind na seçã
 - git branch -M main
 - git remote add origin https://github.com/dev-garcia/interface-cris-residuum.git
 - git push -u origin main
+
+### DataTable no Angular
+
+A instalação e configuração peguei neste link: http://l-lin.github.io/angular-datatables/#/welcome
+
+Primeiro executamos o comando `ng add angular-datatables`, ele vai fazer automaticamente a instalação e a configuração de:
+
+- npm install jquery --save
+- npm install datatables.net --save
+- npm install datatables.net-dt --save
+- npm install angular-datatables --save
+- npm install @types/jquery --save-dev
+- npm install @types/datatables.net --save-dev
+
+Usando o comando não precisamos fazer a instalação de todas as depedências e as configrurações manualmente!
