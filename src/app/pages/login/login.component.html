@@ -17,7 +17,8 @@
   >
     <h2 class="mb-1 text-2xl font-bold text-gray-800">Bem Vindo!</h2>
     <p class="mb-7 text-sm font-normal text-gray-600">Entre com sua conta.</p>
-    <form>
+
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
       <div class="mb-4">
         <div class="flex items-center rounded-2xl border-2 px-3 py-2">
           <svg
@@ -34,19 +35,19 @@
               d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
             />
           </svg>
-
           <input
-            class="ml-2 rounded-2xl border-none pl-2 outline-none"
             type="text"
-            id="nome_usuario"
-            name="nome_usuario"
-            placeholder="Usuario"
+            class="ml-2 rounded-2xl border-none pl-2 outline-none"
+            id="matricula"
+            placeholder="matricula"
+            name="matricula"
+            [(ngModel)]="formData.matricula"
             required
           />
         </div>
       </div>
 
-      <div class="mb-4">
+      <!-- <div class="mb-4">
         <div class="flex items-center rounded-2xl border-2 px-3 py-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,10 +70,9 @@
             id="email_usuario"
             name="email_usuario"
             placeholder="E-mail"
-            required
           />
         </div>
-      </div>
+      </div> -->
 
       <div class="mb-4">
         <div class="flex items-center rounded-2xl border-2 px-3 py-2">
@@ -90,11 +90,12 @@
           </svg>
 
           <input
-            class="ml-2 rounded-2xl border-none pl-2 outline-none"
             type="password"
-            id="senha_usuario"
-            name="senha_usuario"
-            placeholder="Senha"
+            class="ml-2 rounded-2xl border-none pl-2 outline-none"
+            id="senha"
+            placeholder="Password"
+            name="senha"
+            [(ngModel)]="formData.senha"
             required
           />
         </div>
@@ -106,6 +107,7 @@
       >
         Login
       </button>
+      <hr class="my-4" />
 
       <span class="cursor-pointer text-sm text-black hover:underline"
         >Esqueceu a senha?</span

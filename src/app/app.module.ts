@@ -15,6 +15,8 @@ import { ClientesComponent } from './pages/dashboard/clientes/clientes.component
 
 import { TotalClientesComponent } from './components/total-clientes/total-clientes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { BtnUsuarioAtivoComponent } from './components/shared/btn-usuario-ativo/btn-usuario-ativo.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     ClientesComponent,
     TotalClientesComponent,
+    BtnUsuarioAtivoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DataTablesModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
