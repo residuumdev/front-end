@@ -49,6 +49,11 @@ A instalação é bem simples, só seguir a documentação do Tailwind na seçã
 - git remote add origin https://github.com/dev-garcia/interface-cris-residuum.git
 - git push -u origin main
 
+Puxar a versão mais recente do repositório:
+
+- git fetch origin // busca as informações mais recentes do repositório remoto.
+- git pull origin main // Isso fará o download das mudanças mais recentes do branch "main" do repositório remoto para o seu branch local.
+
 ### DataTable no Angular
 
 A instalação e configuração peguei neste link: http://l-lin.github.io/angular-datatables/#/welcome
