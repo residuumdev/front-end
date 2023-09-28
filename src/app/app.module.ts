@@ -17,6 +17,7 @@ import { ClientesComponent } from './pages/dashboard/clientes/clientes.component
 
 import { TotalClientesComponent } from './components/total-clientes/total-clientes.component';
 import { SessaoUsuarioComponent } from './components/sessao-usuario/sessao-usuario.component';
+import { TabelaClientesComponent } from './components/tabela-clientes/tabela-clientes.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SessaoUsuarioComponent } from './components/sessao-usuario/sessao-usuar
     ClientesComponent,
     TotalClientesComponent,
     SessaoUsuarioComponent,
+    TabelaClientesComponent,
   ],
   imports: [
     BrowserModule,

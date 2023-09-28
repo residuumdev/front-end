@@ -27,7 +27,7 @@ export class LoginComponent {
         .then((data) => {
           if (data.code === 200) {
             // Login successful
-            localStorage.setItem('user_chave', JSON.stringify(data.matricula)); // Store user info
+            localStorage.setItem('user_chave', JSON.stringify(data.nome)); // Store user info
             alert('Login realizado com sucesso!');
             // Redirect to the dashboard page (you might need to adjust this URL)
             window.location.href = '/dashboard';
