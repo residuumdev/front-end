@@ -4,6 +4,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ClientesComponent } from './pages/dashboard/clientes/clientes.component';
 import { TestesComponent } from './pages/testes/testes.component';
+import { Error404Component } from './pages/error404/error404.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -21,6 +22,11 @@ const routes: Routes = [
     path: 'testes',
     component: TestesComponent,
     title: 'Residuum - Testes',
+  },
+  {
+    path: '**',
+    component: Error404Component,
+    title: 'Residuum Error 404',
   },
 ];
 
