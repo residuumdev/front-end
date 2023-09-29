@@ -18,6 +18,10 @@ import { ClientesComponent } from './pages/dashboard/clientes/clientes.component
 import { TotalClientesComponent } from './components/total-clientes/total-clientes.component';
 import { SessaoUsuarioComponent } from './components/sessao-usuario/sessao-usuario.component';
 import { TabelaClientesComponent } from './components/tabela-clientes/tabela-clientes.component';
+import { RankingClientesComponent } from './components/ranking-clientes/ranking-clientes.component';
+import { RankingResiduosComponent } from './components/ranking-residuos/ranking-residuos.component';
+import { TheWorldTempoRealComponent } from './components/the-world-tempo-real/the-world-tempo-real.component';
+import { MapaResiduosZonaComponent } from './components/mapa-residuos-zona/mapa-residuos-zona.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,10 @@ import { TabelaClientesComponent } from './components/tabela-clientes/tabela-cli
     TotalClientesComponent,
     SessaoUsuarioComponent,
     TabelaClientesComponent,
+    RankingClientesComponent,
+    RankingResiduosComponent,
+    TheWorldTempoRealComponent,
+    MapaResiduosZonaComponent,
   ],
   imports: [
     BrowserModule,
