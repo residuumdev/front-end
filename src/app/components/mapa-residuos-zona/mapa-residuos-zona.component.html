@@ -1,36 +1,40 @@
-<div class="grid w-full grid-cols-1 gap-4 xl:grid-cols-2 2xl:grid-cols-3">
-  <div class="rounded-lg bg-white p-4 shadow sm:p-6 xl:p-8 2xl:col-span-2">
+<div class="flex flex-col gap-4 xl:flex-row 2xl:flex-wrap">
+  <div
+    class="flex-1 rounded-lg bg-white p-4 shadow sm:p-6 xl:p-8 2xl:col-span-2"
+  >
     <section>
       <h3 class="mb-2 text-xl font-bold">Mapeamento</h3>
 
-      <div class="flex">
+      <div class="flex flex-col xl:flex-row">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159035.44230484957!2d-60.04950494143963!3d-3.0446589072395316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1bc8b37647b7%3A0x2b485c9ff765a9cc!2sManaus%2C%20AM!5e1!3m2!1spt-BR!2sbr!4v1695494127550!5m2!1spt-BR!2sbr"
-          width="600"
+          width="800"
           height="450"
+          class="h-6/6 w-5/6"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
 
-        <div class="m-4">
-          <ul>
-            <li>Azul: papel/papelão</li>
-            <li>Vermelho: plástico</li>
-            <li>Verde: vidro</li>
-            <li>Amarelo: metal</li>
-            <li>Marrom: orgânico</li>
-            <li>Cinza: não reciclável</li>
-            <li>Preto: madeira</li>
-            <li>Laranja: resíduos perigosos</li>
-            <li>Branco: resíduos ambulatoriais e de serviços de saúde</li>
-            <li>Roxo: resíduos radioativos</li>
+        <div class="m-4 flex-1">
+          <h4 class="mb-2 text-lg font-semibold">Legendas</h4>
+          <ul class="list-inside list-disc">
+            <li class="text-blue-500">Azul: papel/papelão</li>
+            <li class="text-red-500">Vermelho: plástico</li>
+            <li class="text-green-500">Verde: vidro</li>
+            <li class="text-yellow-500">Amarelo: metal</li>
+            <li class="text-brown-500">Marrom: orgânico</li>
+            <li class="text-gray-500">Cinza: não reciclável</li>
+            <li class="text-black-500">Preto: madeira</li>
+            <li class="text-orange-500">Laranja: resíduos perigosos</li>
+            <li class="text-secondary">
+              Branco: resíduos ambulatoriais e de serviços de saúde
+            </li>
+            <li class="text-purple-500">Roxo: resíduos radioativos</li>
           </ul>
         </div>
       </div>
     </section>
   </div>
-
-  <app-total-clientes></app-total-clientes>
 </div>
