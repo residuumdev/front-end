@@ -23,6 +23,7 @@ import { RankingResiduosComponent } from './components/ranking-residuos/ranking-
 import { TheWorldTempoRealComponent } from './components/the-world-tempo-real/the-world-tempo-real.component';
 import { MapaResiduosZonaComponent } from './components/mapa-residuos-zona/mapa-residuos-zona.component';
 import { Error404Component } from './pages/error404/error404.component';
+import { BtnCadastrarEmpresaComponent } from './components/btn-cadastrar-empresa/btn-cadastrar-empresa.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { Error404Component } from './pages/error404/error404.component';
     TheWorldTempoRealComponent,
     MapaResiduosZonaComponent,
     Error404Component,
+    BtnCadastrarEmpresaComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,213 @@
+<button
+  class="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+  (click)="openCadastroModal()"
+>
+  Cadastrar Nova Empresa
+</button>
+
+<div
+  class="fixed inset-0 z-50 flex items-center justify-center"
+  [ngClass]="{ hidden: !modalAberto }"
+>
+  <div
+    class="modal-container z-50 mx-auto w-11/12 overflow-y-auto rounded bg-white shadow-lg md:max-w-md"
+  >
+    <div class="modal-content px-6 py-4 text-left">
+      <form (ngSubmit)="cadastrarEmpresa()" #cadastroForm="ngForm">
+        <div class="mb-4">
+          <input
+            [(ngModel)]="empresa.nomeFantasia"
+            type="text"
+            id="nome_fantasia"
+            class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+            name="nome_fantasia"
+            placeholder="Nome Fantasia"
+          />
+          <label
+            for="nome_fantasia"
+            class="mb-2 block text-sm font-bold text-gray-700"
+            >Nome Fantasia</label
+          >
+        </div>
+
+        <div class="mb-4">
+          <input
+            type="text"
+            id="cnpj"
+            class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+            name="cnpj"
+            [(ngModel)]="empresa.cnpj"
+            placeholder="CNPJ"
+            required
+          />
+          <label for="cnpj" class="mb-2 block text-sm font-bold text-gray-700"
+            >CNPJ</label
+          >
+        </div>
+
+        <div class="mb-4">
+          <input
+            [(ngModel)]="empresa.cep"
+            type="text"
+            id="cep"
+            class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+            name="cep"
+            placeholder="CEP"
+            required
+          />
+          <label for="cep" class="mb-2 block text-sm font-bold text-gray-700"
+            >CEP</label
+          >
+        </div>
+
+        <div class="mb-4">
+          <input
+            [(ngModel)]="empresa.bairro"
+            type="text"
+            id="bairro"
+            class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+            name="bairro"
+            placeholder="bairro"
+            required
+          />
+          <label for="bairro" class="mb-2 block text-sm font-bold text-gray-700"
+            >Bairro</label
+          >
+        </div>
+
+        <div class="mb-4">
+          <input
+            [(ngModel)]="empresa.rua"
+            type="text"
+            id="rua"
+            class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+            name="rua"
+            placeholder="rua"
+            required
+          />
+          <label for="rua" class="mb-2 block text-sm font-bold text-gray-700"
+            >Rua</label
+          >
+        </div>
+
+        <div class="mb-4">
+          <input
+            [(ngModel)]="empresa.emp_razaosoci"
+            type="text"
+            class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+            id="emp_razaosoci"
+            placeholder="Seu Nome e Sobrenome"
+            name="emp_razaosoci"
+            required
+          />
+          <label
+            for="emp_razaosoci"
+            class="mb-2 block text-sm font-bold text-gray-700"
+            >Razão Social</label
+          >
+        </div>
+
+        <div class="mb-4">
+          <input
+            [(ngModel)]="empresa.numero"
+            type="text"
+            id="numero"
+            class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+            name="numero"
+            placeholder="numero"
+            required
+          />
+          <label for="numero" class="mb-2 block text-sm font-bold text-gray-700"
+            >Número</label
+          >
+        </div>
+
+        <div class="mb-4">
+          <input
+            [(ngModel)]="empresa.razao_social"
+            type="text"
+            id="razao_social"
+            class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+            name="razao_social"
+            placeholder="razao_social"
+            required
+          />
+          <label
+            for="razao_social"
+            class="mb-2 block text-sm font-bold text-gray-700"
+            >razao_social</label
+          >
+        </div>
+
+        <div class="mb-4">
+          <input
+            [(ngModel)]="empresa.ceo"
+            type="text"
+            id="ceo"
+            class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+            name="ceo"
+            placeholder="ceo"
+            required
+          />
+          <label for="ceo" class="mb-2 block text-sm font-bold text-gray-700"
+            >CEO</label
+          >
+        </div>
+
+        <div class="mb-4">
+          <input
+            [(ngModel)]="empresa.email"
+            type="text"
+            id="email"
+            class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+            name="email"
+            placeholder="email"
+            required
+          />
+          <label for="email" class="mb-2 block text-sm font-bold text-gray-700"
+            >E-mail</label
+          >
+        </div>
+
+        <div class="mb-4">
+          <input
+            [(ngModel)]="empresa.telefone"
+            type="text"
+            id="telefone"
+            class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+            name="telefone"
+            placeholder="telefone"
+            required
+          />
+          <label
+            for="telefone"
+            class="mb-2 block text-sm font-bold text-gray-700"
+            >Telefone</label
+          >
+        </div>
+
+        <button
+          class="w-100 btn btn-lg rounded-3 botao-cadastro mb-2"
+          type="submit"
+        >
+          Cadastrar
+        </button>
+
+        <div class="flex items-center justify-between">
+          <button
+            type="submit"
+            class="rounded bg-[#002266] px-4 py-2 font-bold text-white hover:bg-blue-700"
+          >
+            Cadastrar
+          </button>
+          <button
+            class="rounded bg-[#585c5e] px-4 py-2 font-bold text-white hover:bg-gray-600"
+            (click)="fecharModal()"
+          >
+            Fechar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
