@@ -17,13 +17,14 @@ import { ClientesComponent } from './pages/dashboard/clientes/clientes.component
 
 import { TotalClientesComponent } from './components/total-clientes/total-clientes.component';
 import { SessaoUsuarioComponent } from './components/sessao-usuario/sessao-usuario.component';
-import { TabelaClientesComponent } from './components/tabela-clientes/tabela-clientes.component';
+
 import { RankingClientesComponent } from './components/ranking-clientes/ranking-clientes.component';
 import { RankingResiduosComponent } from './components/ranking-residuos/ranking-residuos.component';
 import { TheWorldTempoRealComponent } from './components/the-world-tempo-real/the-world-tempo-real.component';
 import { MapaResiduosZonaComponent } from './components/mapa-residuos-zona/mapa-residuos-zona.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { BtnCadastrarEmpresaComponent } from './components/btn-cadastrar-empresa/btn-cadastrar-empresa.component';
+import { EmpresasComponent } from './components/empresas/empresas.component';
 
 @NgModule({
   declarations: [
@@ -37,13 +38,13 @@ import { BtnCadastrarEmpresaComponent } from './components/btn-cadastrar-empresa
     ClientesComponent,
     TotalClientesComponent,
     SessaoUsuarioComponent,
-    TabelaClientesComponent,
     RankingClientesComponent,
     RankingResiduosComponent,
     TheWorldTempoRealComponent,
     MapaResiduosZonaComponent,
     Error404Component,
     BtnCadastrarEmpresaComponent,
+    EmpresasComponent,
   ],
   imports: [
     BrowserModule,
