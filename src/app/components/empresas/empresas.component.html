@@ -16,7 +16,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let empresa of empresas">
+    <!-- Removi o ngFor pois estava duplicando a lista, e não é preciso usá-lo pois o próprio datatable já exibe a lista... -->
+    <!-- <tr *ngFor="let empresa of empresas"> 
       <td>{{ empresa.id }}</td>
       <td>{{ empresa.nome_fantasia }}</td>
       <td>{{ empresa.cnpj }}</td>
@@ -31,17 +32,19 @@
       <td>
         <div class="inline-flex">
           <button
-            class="rounded border border-blue-500 bg-transparent px-4 py-2 font-semibold text-blue-700 hover:border-transparent hover:bg-blue-500 hover:text-white"
+            class="py2 rounded border border-blue-500 bg-transparent px-4 font-semibold text-blue-700 hover:border-transparent hover:bg-blue-500 hover:text-white"
+            (click)="editarEmpresa(empresa)"
           >
             Editar
           </button>
           <button
-            class="rounded border border-red-500 bg-transparent px-4 py-2 font-semibold text-red-700 hover:border-transparent hover:bg-red-500 hover:text-white"
+            class="text-red-700:border-transparent rounded border border-red-500 bg-transparent px-4 py-2 font-semibold hover:bg-red-500 hover:text-white"
+            (click)="excluirEmpresa(empresa)"
           >
             Excluir
           </button>
         </div>
       </td>
-    </tr>
+    </tr> -->
   </tbody>
 </table>
