@@ -26,6 +26,7 @@ import { Error404Component } from './pages/error404/error404.component';
 import { BtnCadastrarEmpresaComponent } from './components/btn-cadastrar-empresa/btn-cadastrar-empresa.component';
 import { EmpresasComponent } from './components/empresas/empresas.component';
 import { FormCadastrarUsuarioComponent } from './components/form-cadastrar-usuario/form-cadastrar-usuario.component';
+import { FormCadastrarEmpresaComponent } from './components/form-cadastrar-empresa/form-cadastrar-empresa.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { FormCadastrarUsuarioComponent } from './components/form-cadastrar-usuar
     BtnCadastrarEmpresaComponent,
     EmpresasComponent,
     FormCadastrarUsuarioComponent,
+    FormCadastrarEmpresaComponent,
   ],
   imports: [
     BrowserModule,

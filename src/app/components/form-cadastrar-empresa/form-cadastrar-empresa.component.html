@@ -1,0 +1,152 @@
+<div>
+  <h2>Cadastrar Empresa!</h2>
+  <form (ngSubmit)="onSubmit()" #cadastrarForm="ngForm">
+    <div class="mb-4">
+      <div class="flex items-center rounded-2xl border-2 px-3 py-2">
+        <input
+          type="text"
+          class="ml-2 rounded-2xl border-none pl-2 outline-none"
+          id="nome_fantasia"
+          placeholder="nome_fantasia"
+          name="nome_fantasia"
+          [(ngModel)]="formData.nome_fantasia"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="flex items-center rounded-2xl border-2 px-3 py-2">
+        <input
+          type="text"
+          class="ml-2 rounded-2xl border-none pl-2 outline-none"
+          id="cnpj"
+          placeholder="cnpj"
+          name="cnpj"
+          [(ngModel)]="formData.cnpj"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="flex items-center rounded-2xl border-2 px-3 py-2">
+        <input
+          type="text"
+          class="ml-2 rounded-2xl border-none pl-2 outline-none"
+          id="cep"
+          placeholder="cep"
+          name="cep"
+          [(ngModel)]="formData.cep"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="flex items-center rounded-2xl border-2 px-3 py-2">
+        <input
+          type="text"
+          class="ml-2 rounded-2xl border-none pl-2 outline-none"
+          id="bairro"
+          placeholder="bairro"
+          name="bairro"
+          [(ngModel)]="formData.bairro"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="flex items-center rounded-2xl border-2 px-3 py-2">
+        <input
+          type="text"
+          class="ml-2 rounded-2xl border-none pl-2 outline-none"
+          id="rua"
+          placeholder="rua"
+          name="rua"
+          [(ngModel)]="formData.rua"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="flex items-center rounded-2xl border-2 px-3 py-2">
+        <input
+          type="text"
+          class="ml-2 rounded-2xl border-none pl-2 outline-none"
+          id="numero"
+          placeholder="numero"
+          name="numero"
+          [(ngModel)]="formData.numero"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="flex items-center rounded-2xl border-2 px-3 py-2">
+        <input
+          type="text"
+          class="ml-2 rounded-2xl border-none pl-2 outline-none"
+          id="razao_social"
+          placeholder="razao_social"
+          name="razao_social"
+          [(ngModel)]="formData.razao_social"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="flex items-center rounded-2xl border-2 px-3 py-2">
+        <input
+          type="text"
+          class="ml-2 rounded-2xl border-none pl-2 outline-none"
+          id="ceo"
+          placeholder="ceo"
+          name="ceo"
+          [(ngModel)]="formData.ceo"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="flex items-center rounded-2xl border-2 px-3 py-2">
+        <input
+          type="text"
+          class="ml-2 rounded-2xl border-none pl-2 outline-none"
+          id="email"
+          placeholder="email"
+          name="email"
+          [(ngModel)]="formData.email"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="flex items-center rounded-2xl border-2 px-3 py-2">
+        <input
+          type="text"
+          class="ml-2 rounded-2xl border-none pl-2 outline-none"
+          id="telefone"
+          placeholder="telefone"
+          name="telefone"
+          [(ngModel)]="formData.telefone"
+          required
+        />
+      </div>
+    </div>
+
+    <button
+      type="submit"
+      class="mt-4 w-full rounded-md bg-[#002266] py-2 font-bold text-white hover:bg-[#64a23d]"
+    >
+      Cadastrar
+    </button>
+    <hr class="my-4" />
+  </form>
+</div>
