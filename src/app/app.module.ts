@@ -25,6 +25,7 @@ import { MapaResiduosZonaComponent } from './components/mapa-residuos-zona/mapa-
 import { Error404Component } from './pages/error404/error404.component';
 import { BtnCadastrarEmpresaComponent } from './components/btn-cadastrar-empresa/btn-cadastrar-empresa.component';
 import { EmpresasComponent } from './components/empresas/empresas.component';
+import { FormCadastrarUsuarioComponent } from './components/form-cadastrar-usuario/form-cadastrar-usuario.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { EmpresasComponent } from './components/empresas/empresas.component';
     Error404Component,
     BtnCadastrarEmpresaComponent,
     EmpresasComponent,
+    FormCadastrarUsuarioComponent,
   ],
   imports: [
     BrowserModule,

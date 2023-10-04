@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './testes.component.html',
   styleUrls: ['./testes.component.css'],
 })
-export class TestesComponent {}
+export class TestesComponent {
+  abrirModal() {}
+}
