@@ -13,7 +13,6 @@ import { LoginComponent } from './pages/login/login.component';
 import { TestesComponent } from './pages/testes/testes.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ClientesComponent } from './pages/dashboard/clientes/clientes.component';
 
 import { TotalClientesComponent } from './components/total-clientes/total-clientes.component';
 import { SessaoUsuarioComponent } from './components/sessao-usuario/sessao-usuario.component';
@@ -27,6 +26,9 @@ import { BtnCadastrarEmpresaComponent } from './components/btn-cadastrar-empresa
 import { EmpresasComponent } from './components/empresas/empresas.component';
 import { FormCadastrarUsuarioComponent } from './components/form-cadastrar-usuario/form-cadastrar-usuario.component';
 import { FormCadastrarEmpresaComponent } from './components/form-cadastrar-empresa/form-cadastrar-empresa.component';
+import { ListarEmpresasComponent } from './pages/listar-empresas/listar-empresas.component';
+import { UsuariosComponent } from './components/usuarios/usuarios.component';
+import { ListarUsuariosComponent } from './pages/listar-usuarios/listar-usuarios.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,6 @@ import { FormCadastrarEmpresaComponent } from './components/form-cadastrar-empre
     TestesComponent,
     FooterComponent,
     DashboardComponent,
-    ClientesComponent,
     TotalClientesComponent,
     SessaoUsuarioComponent,
     RankingClientesComponent,
@@ -49,6 +50,9 @@ import { FormCadastrarEmpresaComponent } from './components/form-cadastrar-empre
     EmpresasComponent,
     FormCadastrarUsuarioComponent,
     FormCadastrarEmpresaComponent,
+    ListarEmpresasComponent,
+    UsuariosComponent,
+    ListarUsuariosComponent,
   ],
   imports: [
     BrowserModule,

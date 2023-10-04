@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-empresas',
-  templateUrl: './empresas.component.html',
-  styleUrls: ['./empresas.component.css'],
+  selector: 'app-usuarios',
+  templateUrl: './usuarios.component.html',
+  styleUrls: ['./usuarios.component.css'],
 })
-export class EmpresasComponent implements OnInit {
+export class UsuariosComponent implements OnInit {
   dtOptions: DataTables.Settings = {};
   empresas: any[] = [];
 
@@ -32,16 +32,9 @@ export class EmpresasComponent implements OnInit {
       },
       columns: [
         { data: 'id' },
-        { data: 'nome_fantasia' },
-        { data: 'cnpj' },
-        { data: 'cep' },
-        { data: 'bairro' },
-        { data: 'rua' },
-        { data: 'numero' },
-        { data: 'razao_social' },
-
-        { data: 'email' },
-        { data: 'telefone' },
+        { data: 'nome' },
+        { data: 'matricula' },
+        { data: 'senha' },
         {
           render: function (data: any, type: any, full: any) {
             return `
