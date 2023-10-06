@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./empresas.component.css'],
 })
 export class EmpresasComponent implements OnInit {
-  dtOptions: DataTables.Settings = {};
+  dtOptions: DataTables.Settings = {}; // aqui podemos configurar para português
   empresas: any[] = [];
 
   constructor(private http: HttpClient) {}
