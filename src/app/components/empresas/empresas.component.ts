@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./empresas.component.css'],
 })
 export class EmpresasComponent implements OnInit {
-  dtOptions: DataTables.Settings = {}; // aqui podemos configurar para português
+  dtOptions: DataTables.Settings = {};
+
   empresas: any[] = [];
 
   constructor(private http: HttpClient) {}
@@ -17,6 +18,13 @@ export class EmpresasComponent implements OnInit {
 
     this.dtOptions = {
       pagingType: 'full_numbers',
+      pageLength: 5,
+      lengthMenu: [5, 10, 15, 25, 50, 100],
+      processing: true,
+      language: {
+        url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json',
+      },
+
       ajax: (dataTablesParameters: any, callback) => {
         that.http
           .get<any>('http://localhost:8080/listar_empresas')
@@ -55,11 +63,7 @@ export class EmpresasComponent implements OnInit {
       ],
     };
   }
-  editarEmpresa(id: number): void {
-    // Aqui você pode redirecionar o usuário para a página de edição da empresa ou abrir um modal de edição, dependendo da sua preferência.
-    // Por enquanto, vou apenas exibir uma mensagem no console.
-    console.log(`Editar empresa ID: ${id}`);
-  }
+  editarEmpresa(id: number): void {}
 
   excluirEmpresa(id: number): void {
     // Aqui você pode criar uma confirmação com o usuário antes de realizar a exclusão.
