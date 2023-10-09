@@ -19,7 +19,7 @@ export class EmpresasComponent implements OnInit {
     this.dtOptions = {
       pagingType: 'full_numbers',
       pageLength: 5,
-      lengthMenu: [5, 10, 15, 25, 50, 100],
+      lengthMenu: [5, 10, 25, 50, 100],
       processing: true,
       language: {
         url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json',
@@ -61,7 +61,7 @@ export class EmpresasComponent implements OnInit {
             return `
             <div class="inline-flex">
               <button
-                class="py2 btn-excluir rounded border border-blue-500 bg-transparent px-4 py-2 font-semibold text-blue-700 hover:border-transparent hover:bg-blue-500 hover:text-white"
+                class="py2 btn-editar rounded border border-blue-500 bg-transparent px-4 py-2 font-semibold text-blue-700 hover:border-transparent hover:bg-blue-500 hover:text-white"
                 id="${full.id}"
               >
                 Editar
