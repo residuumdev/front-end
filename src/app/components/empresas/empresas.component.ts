@@ -82,9 +82,9 @@ export class EmpresasComponent implements OnInit {
   editarEmpresa(id: number): void {}
 
   excluirEmpresa(id: number): void {
-    // Aqui você pode criar uma confirmação com o usuário antes de realizar a exclusão.
+    // Confirmação do usuário se deve excluir ou cancelar a ação
     if (confirm('Tem certeza que deseja excluir esta empresa?')) {
-      // Se o usuário confirmar, você pode fazer a chamada para excluir a empresa no servidor.
+      // Se o usuário confirmar, vamos chamar a rota e deletar o usuario
       this.http
         .delete<any>('http://localhost:8080/deletar_empresa', {
           body: { id: id },
@@ -92,18 +92,9 @@ export class EmpresasComponent implements OnInit {
         .subscribe((resp) => {
           console.log(resp.message);
 
-          // Atualize a lista de empresas após a exclusão, se necessário.
-          this.atualizarListaEmpresas();
+          // Recarrega a pagina apos excluir
+          window.location.reload();
         });
     }
-  }
-
-  // Esta função pode ser usada para atualizar a lista de empresas após a exclusão.
-  atualizarListaEmpresas() {
-    this.http
-      .get<any>('http://localhost:8080/listar_empresas')
-      .subscribe((resp) => {
-        this.empresas = resp.clientes_empresas;
-      });
   }
 }

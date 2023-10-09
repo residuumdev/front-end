@@ -39,6 +39,7 @@ export class FormCadastrarEmpresaComponent {
             // Sucesso
 
             alert('Empresa cadastrada com sucesso!');
+            window.location.reload();
           } else {
             // Erro
             alert(data.mensage);
