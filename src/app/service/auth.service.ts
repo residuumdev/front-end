@@ -4,14 +4,18 @@ import {
   HttpHandler,
   HttpEvent,
   HttpInterceptor,
+  HttpErrorResponse,
 } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService implements HttpInterceptor {
-  constructor() {}
+  constructor(private router: Router) {}
+
   intercept(
     request: HttpRequest<unknown>,
     next: HttpHandler,
@@ -24,8 +28,18 @@ export class AuthService implements HttpInterceptor {
           Authorization: `Bearer ${token}`,
         },
       });
-      return next.handle(clonedRequest);
+      return next.handle(clonedRequest).pipe(
+        catchError((err: HttpErrorResponse) => {
+          if (err.status === 401) {
+            alert('Não autorizado - Faça o login novamente!');
+            this.router.navigate(['login']);
+          }
+          //  retorna uma função que cria o erro.
+          return throwError(() => err);
+        }),
+      );
     }
+
     return next.handle(request);
   }
 }

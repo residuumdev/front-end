@@ -1,5 +1,6 @@
 import { HTTP_INTERCEPTORS } from '@angular/common/http'; // serviço de autenticação para ser usado em todas requisições http
 import { AuthService } from './service/auth.service'; // serviço de autenticação para ser usado em todas requisições http
+import { Router } from '@angular/router';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -65,7 +66,8 @@ import { ListarUsuariosComponent } from './pages/listar-usuarios/listar-usuarios
     FormsModule,
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: AuthService, multi: true }, // serviço de autenticação
+    { provide: HTTP_INTERCEPTORS, useClass: AuthService, multi: true },
+    Router, // serviço de autenticação
   ],
   bootstrap: [AppComponent],
 })
