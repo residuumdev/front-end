@@ -59,11 +59,21 @@ export class EmpresasComponent implements OnInit {
         {
           render: function (data: any, type: any, full: any) {
             return `
-              <div class="inline-flex">
-                <button class="py2 rounded border border-blue-500 bg-transparent px-4 font-semibold text-blue-700 hover:border-transparent hover:bg-blue-500 hover:text-white" onclick="editarEmpresa(${full.id})">Editar</button>
-                <button class="btn-excluir text-red-700:border-transparent rounded border border-red-500 bg-transparent px-4 py-2 font-semibold hover:bg-red-500 hover:text-white" id="${full.id}">Excluir</button>
-              </div>
-        `;
+            <div class="inline-flex">
+              <button
+                class="py2 btn-excluir rounded border border-blue-500 bg-transparent px-4 py-2 font-semibold text-blue-700 hover:border-transparent hover:bg-blue-500 hover:text-white"
+                id="${full.id}"
+              >
+                Editar
+              </button>
+              <button
+                class="btn-excluir rounded border border-red-500 bg-transparent px-4 py-2 font-semibold text-red-700 hover:border-transparent hover:bg-red-500 hover:text-white"
+                id="${full.id}"
+              >
+                Excluir
+              </button>
+            </div>
+            `;
           },
         },
       ],
