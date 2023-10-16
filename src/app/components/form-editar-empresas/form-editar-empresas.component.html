@@ -4,6 +4,20 @@
       <input
         type="text"
         class="ml-2 rounded-2xl border-none pl-2 outline-none"
+        id="id"
+        placeholder="id"
+        name="id"
+        [(ngModel)]="formData.id"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <div class="flex items-center rounded-2xl border-2 px-3 py-2">
+      <input
+        type="text"
+        class="ml-2 rounded-2xl border-none pl-2 outline-none"
         id="nome_fantasia"
         placeholder="nome_fantasia"
         name="nome_fantasia"
@@ -158,18 +172,3 @@
     </button>
   </div>
 </form>
-
-<div>
-  <label
-    for="category"
-    class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-    >Tipo de Cliente</label
-  >
-  <select
-    id="category"
-    class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-  >
-    <option selected="">PJ</option>
-    <option value="TV">PF</option>
-  </select>
-</div>

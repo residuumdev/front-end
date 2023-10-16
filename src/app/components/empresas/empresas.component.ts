@@ -82,31 +82,7 @@ export class EmpresasComponent implements OnInit {
       ],
     };
   }
-  editarEmpresa(id: number): void {
-    Swal.fire({
-      title: 'Deseja salvar as alterações?',
-      showDenyButton: true,
-      showCancelButton: true,
-      confirmButtonText: 'Salvar',
-      denyButtonText: `Não Salvar`,
-    }).then((result) => {
-      /* isConfirmed e isDenied sao nomes de propriedades especificas definidas pela biblioteca SweetAlert2. */
-      if (result.isConfirmed) {
-        this.http
-          .delete<any>('http://localhost:8080/editar_empresa', {
-            body: { id: id },
-          })
-          .subscribe((resp) => {
-            Swal.fire('Salvo!', '', 'success');
-
-            // Recarrega a pagina apos excluir
-            window.location.reload();
-          });
-      } else if (result.isDenied) {
-        Swal.fire('A empresa não foi editada', '', 'info');
-      }
-    });
-  }
+  editarEmpresa(id: number): void {}
 
   excluirEmpresa(id: number): void {
     // Confirmação do usuário se deve excluir ou cancelar a ação
