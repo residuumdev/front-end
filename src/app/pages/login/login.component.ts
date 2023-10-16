@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -25,25 +26,27 @@ export class LoginComponent {
       })
         .then((response) => response.json())
         .then((data) => {
+          // 200 = sucesso, se obter sucesso
           if (data.code === 200) {
-            // Login successful
-            localStorage.setItem('user_chave', JSON.stringify(data.nome)); // Store user info
-            localStorage.setItem('token', JSON.stringify(data.token)); // Store user info
-            alert('Login realizado com sucesso!');
-            // Redirect to the dashboard page (you might need to adjust this URL)
+            // salvar o nome e o token no local storage
+            localStorage.setItem('user_chave', JSON.stringify(data.nome)); // Enviar e salvar no local storage
+            localStorage.setItem('token', JSON.stringify(data.token)); // Enviar e salvar no local storage
+            Swal.fire('Login realizado com sucesso!');
+
+            // Leva para a rota da dashboard
             window.location.href = '/dashboard';
           } else {
-            // Handle error
-            alert(data.mensage);
+            // Se não obter sucesso
+            Swal.fire('Usuário ou senha não existe!');
           }
         })
         .catch(() => {
-          // Handle fetch error
-          alert('Erro ao fazer login!');
+          // Se não obter sucesso
+          Swal.fire('Erro ao fazer login!');
         });
     } catch (error) {
       console.error(error);
-      alert('Erro ao fazer login!');
+      Swal.fire('Erro ao fazer login!');
     }
   }
 }

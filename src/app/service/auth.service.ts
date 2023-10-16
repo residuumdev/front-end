@@ -38,7 +38,7 @@ export class AuthService implements HttpInterceptor {
           return throwError(() => err);
         }),
       );
-    }
+    } 
 
     return next.handle(request);
   }
