@@ -65,7 +65,7 @@ import { ListarUsuariosComponent } from './pages/listar-usuarios/listar-usuarios
     DataTablesModule,
     HttpClientModule,
     FormsModule,
-    SweetAlert2Module, 
+    SweetAlert2Module.forRoot(),
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthService, multi: true },

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-empresas',
@@ -83,18 +84,28 @@ export class EmpresasComponent implements OnInit {
 
   excluirEmpresa(id: number): void {
     // Confirmação do usuário se deve excluir ou cancelar a ação
-    if (confirm('Tem certeza que deseja excluir esta empresa?')) {
-      // Se o usuário confirmar, vamos chamar a rota e deletar o usuario
-      this.http
-        .delete<any>('http://localhost:8080/deletar_empresa', {
-          body: { id: id },
-        })
-        .subscribe((resp) => {
-          console.log(resp.message);
 
-          // Recarrega a pagina apos excluir
-          window.location.reload();
-        });
-    }
+    Swal.fire({
+      title: 'Tem certeza que deseja excluir esta empresa?',
+      showDenyButton: true,
+      confirmButtonText: `Sim`,
+      denyButtonText: `Não`,
+    }).then((result) => {
+      /* isConfirmed e isDenied sao nomes de propriedades especificas definidas pela biblioteca SweetAlert2. */
+      if (result.isConfirmed) {
+        this.http
+          .delete<any>('http://localhost:8080/deletar_empresa', {
+            body: { id: id },
+          })
+          .subscribe((resp) => {
+            console.log(resp.message);
+
+            // Recarrega a pagina apos excluir
+            window.location.reload();
+          });
+      } else if (result.isDenied) {
+        Swal.fire('A empresa não foi excluída', '', 'info');
+      }
+    });
   }
 }
