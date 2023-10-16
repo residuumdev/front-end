@@ -9,6 +9,7 @@ import {
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Injectable({
   providedIn: 'root',
@@ -31,14 +32,17 @@ export class AuthService implements HttpInterceptor {
       return next.handle(clonedRequest).pipe(
         catchError((err: HttpErrorResponse) => {
           if (err.status === 401) {
-            alert('Não autorizado - Faça o login novamente!');
-            this.router.navigate(['login']);
+            Swal.fire(
+              'Você não tem permissão para acessar este serviço, realize o login!',
+            ).then(() => {
+              this.router.navigate(['/']);
+            });
           }
-          //  retorna uma função que cria o erro.
+          // retorna uma função que cria o erro.
           return throwError(() => err);
         }),
       );
-    } 
+    }
 
     return next.handle(request);
   }
