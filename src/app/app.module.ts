@@ -24,7 +24,6 @@ import { SessaoUsuarioComponent } from './components/sessao-usuario/sessao-usuar
 
 import { RankingClientesComponent } from './components/ranking-clientes/ranking-clientes.component';
 import { RankingResiduosComponent } from './components/ranking-residuos/ranking-residuos.component';
-import { TheWorldTempoRealComponent } from './components/the-world-tempo-real/the-world-tempo-real.component';
 import { MapaResiduosZonaComponent } from './components/mapa-residuos-zona/mapa-residuos-zona.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { BtnCadastrarEmpresaComponent } from './components/btn-cadastrar-empresa/btn-cadastrar-empresa.component';
@@ -50,7 +49,6 @@ import { FormEditarEmpresasComponent } from './components/form-editar-empresas/f
     SessaoUsuarioComponent,
     RankingClientesComponent,
     RankingResiduosComponent,
-    TheWorldTempoRealComponent,
     MapaResiduosZonaComponent,
     Error404Component,
     BtnCadastrarEmpresaComponent,
