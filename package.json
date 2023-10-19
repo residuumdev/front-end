@@ -33,9 +33,9 @@
     "@angular-devkit/build-angular": "^16.2.6",
     "@angular/cli": "~16.2.6",
     "@angular/compiler-cli": "^16.2.10",
-    "@types/datatables.net": "^1.10.25",
-    "@types/jasmine": "~5.1.0",
-    "@types/jquery": "^3.5.22",
+    "@types/datatables.net": "^1.10.26",
+    "@types/jasmine": "~5.1.1",
+    "@types/jquery": "^3.5.24",
     "autoprefixer": "^10.4.16",
     "jasmine-core": "~5.1.1",
     "karma": "~6.4.2",
@@ -45,7 +45,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.5",
+    "prettier-plugin-tailwindcss": "^0.5.6",
     "tailwindcss": "^3.3.3",
     "typescript": "~5.1.3"
   }
