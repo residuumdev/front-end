@@ -63,19 +63,23 @@ export class EmpresasComponent implements OnInit {
           render: function (data: any, type: any, full: any) {
             return `
             <div class="inline-flex">
-              <button
-                class="py2 btn-editar rounded border border-blue-500 bg-transparent px-4 py-2 font-semibold text-blue-700 hover:border-transparent hover:bg-blue-500 hover:text-white"
-                id="${full.id}"
-              >
-                Editar
-              </button>
-              <button
-                class="btn-excluir rounded border border-red-500 bg-transparent px-4 py-2 font-semibold text-red-700 hover:border-transparent hover:bg-red-500 hover:text-white"
-                id="${full.id}"
-              >
-                Excluir
-              </button>
-            </div>
+            <button
+              data-modal-target="editarEmpresaModal"
+              data-modal-toggle="editarEmpresaModal"
+              class="btn-editar block rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              type="button"
+              id="${full.id}"
+            >
+              Editar
+            </button>
+          
+            <button
+              class="btn-excluir rounded border border-red-500 bg-transparent px-4 py-2 font-semibold text-red-700 hover:border-transparent hover:bg-red-500 hover:text-white"
+              id="${full.id}"
+            >
+              Excluir
+            </button>
+          </div>
             `;
           },
         },
