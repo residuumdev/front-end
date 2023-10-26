@@ -33,7 +33,6 @@ import { FormCadastrarEmpresaComponent } from './components/form-cadastrar-empre
 import { ListarEmpresasComponent } from './pages/listar-empresas/listar-empresas.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { ListarUsuariosComponent } from './pages/listar-usuarios/listar-usuarios.component';
-import { EditarEmpresasComponent } from './components/editar-empresas/editar-empresas.component';
 import { FormEditarEmpresasComponent } from './components/form-editar-empresas/form-editar-empresas.component';
 
 @NgModule({
@@ -58,7 +57,6 @@ import { FormEditarEmpresasComponent } from './components/form-editar-empresas/f
     ListarEmpresasComponent,
     UsuariosComponent,
     ListarUsuariosComponent,
-    EditarEmpresasComponent,
     FormEditarEmpresasComponent,
   ],
   imports: [

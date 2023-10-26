@@ -60,15 +60,15 @@ export class EmpresasComponent implements OnInit {
         { data: 'email' },
         { data: 'telefone' },
         {
-          render: function (data: any, type: any, full: any) {
+          render: function (_data: any, type: any, full: any) {
             return `
             <div class="inline-flex">
             <button
               data-modal-target="editarEmpresaModal"
               data-modal-toggle="editarEmpresaModal"
-              class="btn-editar block rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               type="button"
               id="${full.id}"
+              class="btn-editar rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300"
             >
               Editar
             </button>
@@ -86,7 +86,15 @@ export class EmpresasComponent implements OnInit {
       ],
     };
   }
-  editarEmpresa(id: number): void {}
+  editarEmpresa(id: number): void {
+      // Abrir o modal
+  let modal = document.getElementById('editarEmpresaModal');
+  if(modal) {
+    modal.style.display = 'block';
+  } else {
+    console.error('Modal element not found');
+  }
+  }
 
   excluirEmpresa(id: number): void {
     // Confirmação do usuário se deve excluir ou cancelar a ação
