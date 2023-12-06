@@ -1,0 +1,60 @@
+/* parte do filtro - inicio */
+
+.filter-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 80%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .date-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-input label {
+    text-align: center;
+    margin-right: 5px;
+  }
+  
+  .date-input input {
+    padding: 2px;
+    max-width: 100%;
+    box-sizing: border-box;
+    align-self: center;
+  }
+  
+  .consult-button {
+
+    background-color: #545759;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    max-width: 200px;
+    box-sizing: border-box;
+    align-self: center; 
+  }
+  
+  @media (max-width: 600px) {
+    .filter-container {
+      grid-template-columns: 1fr;
+      max-width: none;
+    }
+  
+    .consult-button {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
+  
+/* parte do filtro - fim  */

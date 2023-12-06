@@ -35,6 +35,12 @@ import { ListarUsuariosComponent } from './pages/listar-usuarios/listar-usuarios
 import { FormEditarEmpresasComponent } from './components/form-editar-empresas/form-editar-empresas.component';
 import { MenuEventosComponent } from './components/side-nav/menu-eventos/menu-eventos.component';
 import { FeiraDoPolo2023Component } from './components/side-nav/menu-eventos/feira-do-polo-2023/feira-do-polo-2023.component';
+import { DashboardFeiraDoPolo2023Component } from './pages/dashboard-feira-do-polo-2023/dashboard-feira-do-polo-2023.component';
+import { DashboardCharts2023Component } from './components/side-nav/menu-eventos/feira-do-polo-2023/dashboard-charts-2023/dashboard-charts-2023.component';
+import { ListarParticipantesFeiraDoPolo2023Component } from './pages/listar-participantes-feira-do-polo-2023/listar-participantes-feira-do-polo-2023.component';
+import { DatatableParticipantes2023Component } from './components/side-nav/menu-eventos/feira-do-polo-2023/datatable-participantes-2023/datatable-participantes-2023.component';
+import { GraficoPizzaFeiraDoPolo2023Component } from './pages/grafico-pizza-feira-do-polo-2023/grafico-pizza-feira-do-polo-2023.component';
+import { DashboardPizza2023Component } from './components/side-nav/menu-eventos/feira-do-polo-2023/dashboard-pizza-2023/dashboard-pizza-2023.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +67,12 @@ import { FeiraDoPolo2023Component } from './components/side-nav/menu-eventos/fei
     FormEditarEmpresasComponent,
     MenuEventosComponent,
     FeiraDoPolo2023Component,
+    DashboardFeiraDoPolo2023Component,
+    DashboardCharts2023Component,
+    ListarParticipantesFeiraDoPolo2023Component,
+    DatatableParticipantes2023Component,
+    GraficoPizzaFeiraDoPolo2023Component,
+    DashboardPizza2023Component
   ],
   imports: [
     BrowserModule,
@@ -68,6 +80,7 @@ import { FeiraDoPolo2023Component } from './components/side-nav/menu-eventos/fei
     DataTablesModule,
     HttpClientModule,
     FormsModule,
+    
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthService, multi: true },

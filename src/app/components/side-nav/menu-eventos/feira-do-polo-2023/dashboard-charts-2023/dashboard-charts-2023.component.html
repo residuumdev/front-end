@@ -1,0 +1,91 @@
+<!-- filtro - inicio -->
+
+<div class="filter-container">
+  <div class="date-input">
+    <label for="startDate">Data de Início </label>
+    <input type="date" id="startDate" name="startDate">
+  </div>
+
+  <div class="date-input">
+    <label for="endDate">Data de Fim </label>
+    <input type="date" id="endDate" name="endDate">
+  </div>
+
+  <button class="consult-button" id="consultButton">Consultar</button>
+</div>
+
+  
+<!-- filtro - final -->
+
+<!-- cards - inicio -->
+
+<div class="grid-container">
+
+    <div class="grid-item metal">
+      <i class="fas fa-cogs fa-2x"></i>
+      <h2>METAL</h2>
+      <div class="grid-value">1</div>
+    </div>
+
+    <div class="grid-item papel">
+      <i class="fas fa-file-alt fa-2x"></i>
+      <h2>PAPEL</h2>
+      <div class="grid-value">2</div>
+    </div>
+
+    <div class="grid-item plastico">
+      <i class="fas fa-recycle fa-2x"></i>
+      <h2>PLÁSTICO</h2>
+      <div class="grid-value">3</div>
+    </div>
+
+    <div class="grid-item vidro">
+      <i class="fas fa-glass-whiskey fa-2x"></i>
+      <h2>VIDRO</h2>
+      <div class="grid-value">4</div>
+    </div>
+
+    <div class="grid-item eletronico">
+      <i class="fas fa-glass-whiskey fa-2x"></i>
+      <h2>ELETRÔNICO</h2>
+      <div class="grid-value">5</div>
+    </div>
+
+    <div class="grid-item organico">
+      <i class="fas fa-glass-whiskey fa-2x"></i>
+      <h2>ORGÂNICO</h2>
+      <div class="grid-value">5</div>
+    </div>
+
+    <div class="grid-item total-nao-reciclavel">
+      <i class="fas fa-users fa-2x"></i>
+      <h2>NÃO RECICLAVEL</h2>
+      <div class="grid-value">6</div>
+    </div>
+
+    <div class="grid-item peso-total">
+      <i class="fas fa-weight fa-2x"></i>
+      <h2>PESO TOTAL</h2>
+      <div class="grid-value">7</div>
+    </div>
+
+   
+    <div class="grid-item total-pessoas">
+      <i class="fas fa-users fa-2x"></i>
+      <h2>TOTAL DE PESSOAS</h2>
+      <div class="grid-value">8</div>
+    </div>
+    
+</div>
+
+<!-- cards - fim -->
+
+<!-- grafico de barras - inicio -->
+
+<div class="chart-container">
+    <canvas  id="MyChart" >{{ chart }}</canvas>
+</div>
+
+<!-- grafico de barras - final -->
+
+
