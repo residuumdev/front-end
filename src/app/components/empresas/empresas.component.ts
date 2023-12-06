@@ -33,9 +33,7 @@ export class EmpresasComponent implements OnInit {
             that.empresas = resp.clientes_empresas;
 
             callback({
-              recordsTotal: resp.clientes_empresas.length,
-              recordsFiltered: resp.clientes_empresas.length,
-              data: resp.clientes_empresas,
+              //o que deve popular a tabela 
             });
           });
       },

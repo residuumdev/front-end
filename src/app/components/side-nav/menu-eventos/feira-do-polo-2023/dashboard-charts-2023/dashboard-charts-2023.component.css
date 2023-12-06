@@ -1,0 +1,151 @@
+/* parte do filtro - inicio */
+
+.filter-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 80%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .date-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-input label {
+    text-align: center;
+    margin-right: 5px;
+  }
+  
+  .date-input input {
+    padding: 2px;
+    max-width: 100%;
+    box-sizing: border-box;
+    align-self: center;
+  }
+  
+  .consult-button {
+
+    background-color: #545759;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    max-width: 200px;
+    box-sizing: border-box;
+    align-self: center; 
+  }
+  
+  @media (max-width: 600px) {
+    .filter-container {
+      grid-template-columns: 1fr;
+      max-width: none;
+    }
+  
+    .consult-button {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
+  
+/* parte do filtro - fim  */
+
+/* cards -  inicio */
+
+.grid-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 45rem; /* aqui faz o tamanho dos cards diminuirem */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  margin-bottom: 2rem;
+}
+
+.grid-item {
+  flex: 0 0 calc(30% - 10px); 
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+}
+
+.grid-item h2 {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.grid-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.metal {
+  background-color: #ffec00;
+}
+
+.papel {
+  background-color: #3498db;
+}
+
+.plastico {
+  background-color: #e74c3c;
+}
+
+.vidro {
+  background-color: #2ecc71;
+}
+
+.eletronico {
+  background-color: #ffa500;
+}
+
+.organico {
+  background-color: #a62a2a;
+}
+
+.total-nao-reciclavel {
+  background-color: #808080;
+}
+
+.peso-total,
+.total-pessoas {
+  background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    flex: 0 0 calc(50% - 10px); 
+  }
+}
+  /* cards -  fim */
+
+
+/* grafico de barras - inicio */
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto; /* centraliza o grafico */
+}
+
+canvas {
+    max-width: 150%; 
+    height: auto; 
+    display: block;
+}
+
+/* grafico de barras - fim */
